@@ -1,13 +1,15 @@
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:fluttertoast_example/toast_context.dart';
 import 'package:fluttertoast_example/toast_no_context.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/material.dart';
 
-GlobalKey globalKey = GlobalKey();
+GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() => runApp(
       MaterialApp(
+        builder: FToastBuilder(),
         home: MyApp(),
+        navigatorKey: navigatorKey,
       ),
     );
 
@@ -20,7 +22,6 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: globalKey,
       appBar: AppBar(
         title: Text("Toast"),
       ),

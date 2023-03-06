@@ -1,3 +1,29 @@
+## [8.2.1]
+
+- Removed `context.mounted`
+
+## [8.2.0]
+
+- Updated the flow for Toast with Context
+
+## [8.1.4]
+
+- Merged #419 (added environment restriction in pubspec)
+
+## [8.1.3]
+
+- Merged #415 (improvements to provide safer usage) @AlexSeednov
+- Updated Readme.md
+
+## [8.1.2]
+
+- Merged #405 #408
+
+## [8.1.1] [8.1.0]
+
+- Many issues fixed
+- iOS M1 Chip Fix
+
 ## [8.0.9]
 
 - Merged PRS #342 #353 #363 #346 and #370
